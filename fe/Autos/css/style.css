@@ -93,7 +93,7 @@ main .tarjeta:nth-child(3) > button:hover {
 
 @media screen and (min-width: 780px) {
   html {
-    height: 100vh;
+    min-height: 100%;
   }
   p {
     letter-spacing: 1.5px;
