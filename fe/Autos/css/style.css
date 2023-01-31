@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0deg, 0%, 95%);
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+}
+
+img {
+  margin-bottom: 2.66rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+  -moz-columns: hsl(0deg, 0%, 95%);
+       columns: hsl(0deg, 0%, 95%);
+  margin-bottom: 2.1rem;
+}
+
+p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: inherit;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsl(0deg, 0%, 95%);
+  border: 2px solid transparent;
+}
+button:hover {
+  border: 2px solid hsl(0deg, 0%, 95%);
+  background-color: transparent;
+}
+
+.tarjeta {
+  padding: 3.33rem;
+}
+
+main {
+  max-width: 375px;
+  margin: 6rem 1.6rem;
+  transition: all 1s;
+}
+main .tarjeta:nth-child(1) {
+  background-color: hsl(31deg, 77%, 52%);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+main .tarjeta:nth-child(1) > button {
+  color: hsl(31deg, 77%, 52%);
+}
+main .tarjeta:nth-child(1) > button:hover {
+  color: hsl(0deg, 0%, 95%);
+}
+main .tarjeta:nth-child(2) {
+  background-color: hsl(184deg, 100%, 22%);
+}
+main .tarjeta:nth-child(2) > button {
+  color: hsl(184deg, 100%, 22%);
+}
+main .tarjeta:nth-child(2) > button:hover {
+  color: hsl(0deg, 0%, 95%);
+}
+main .tarjeta:nth-child(3) {
+  background-color: hsl(179deg, 100%, 13%);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+main .tarjeta:nth-child(3) > button {
+  color: hsl(179deg, 100%, 13%);
+}
+main .tarjeta:nth-child(3) > button:hover {
+  color: hsl(0deg, 0%, 95%);
+}
+
+@media screen and (min-width: 780px) {
+  html {
+    height: 100vh;
+  }
+  p {
+    letter-spacing: 1.5px;
+    margin-bottom: 6rem;
+  }
+  main {
+    max-width: 960px;
+    display: flex;
+  }
+  main .tarjeta:nth-child(1) {
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: unset;
+  }
+  main .tarjeta:nth-child(3) {
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

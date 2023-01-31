@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+$Titulo: "Big Shoulders Display", cursive;
+$Texto: "Lexend Deca", sans-serif;
+$Naranja: hsl(31, 77%, 52%);
+$VerdeClaro: hsl(184, 100%, 22%);
+$verdeOscuro: hsl(179, 100%, 13%);
+$Blanco: hsla(0, 0%, 100%, 0.75);
+$Gris: hsl(0, 0%, 95%);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-family: $Texto;
+	font-size: 15px;
+	background-color: $Gris;
+	display: flex;
+	flex-wrap: wrap;
+	place-content: center;
+}
+
+img {
+	margin-bottom: 2.66rem;
+}
+
+h2 {
+	font-size: 2.6rem;
+	font-family: $Titulo;
+	color: $Gris;
+	text-transform: uppercase;
+	columns: $Gris;
+	margin-bottom: 2.1rem;
+}
+
+p {
+	color: $Blanco;
+	letter-spacing: 1px;
+	margin-bottom: 2rem;
+}
+
+button {
+	appearance: none;
+	font-family: inherit;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 2rem;
+	background-color: $Gris;
+	color: $Gris;
+	border: 2px solid transparent;
+	&:hover {
+		border: 2px solid $Gris;
+		background-color: transparent;
+	}
+}
+
+.tarjeta {
+	padding: 3.33rem;
+}
+
+main {
+	max-width: 375px;
+	margin: 6rem 1.6rem;
+	transition: all 1s;
+	.tarjeta {
+		&:nth-child(1) {
+			background-color: $Naranja;
+			border-top-left-radius: 1rem;
+			border-top-right-radius: 1rem;
+			> button {
+				color: $Naranja;
+				&:hover {
+					color: $Gris;
+				}
+			}
+		}
+		&:nth-child(2) {
+			background-color: $VerdeClaro;
+			> button {
+				color: $VerdeClaro;
+				&:hover {
+					color: $Gris;
+				}
+			}
+		}
+		&:nth-child(3) {
+			background-color: $verdeOscuro;
+			border-bottom-left-radius: 1rem;
+			border-bottom-right-radius: 1rem;
+			> button {
+				color: $verdeOscuro;
+				&:hover {
+					color: $Gris;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 780px) {
+	html {
+		height: 100vh;
+	}
+	p {
+		letter-spacing: 1.5px;
+		margin-bottom: 6rem;
+	}
+
+	main {
+		max-width: 960px;
+		display: flex;
+		.tarjeta {
+			&:nth-child(1) {
+				border-bottom-left-radius: 1rem;
+				border-top-right-radius: unset;
+			}
+			&:nth-child(3) {
+				border-bottom-left-radius: unset;
+				border-top-right-radius: 1rem;
+			}
+		}
+	}
+}
